@@ -1,0 +1,6 @@
+{
+  "name": "KNOW YOUR RIGHTS",
+  "description": "An intelligent digital legal desk and Indian legal awareness platform to help citizens understand their rights, preliminary steps, evidence preservation, and relevant laws.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

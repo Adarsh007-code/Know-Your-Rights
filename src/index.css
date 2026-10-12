@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-paper-50: #FCFAF6;
+  --color-paper-100: #F7F4EC;
+  --color-paper-200: #EFE9DB;
+  --color-paper-300: #DFD7C4;
+  --color-ink-950: #121110;
+  --color-ink-900: #1C1B19;
+  --color-ink-800: #2C2A26;
+  --color-ink-700: #423F39;
+  --color-ink-600: #5D5951;
+  --color-ink-400: #888277;
+  --color-ink-300: #B5AEA1;
+  --color-burgundy-900: #4A0E18;
+  --color-burgundy-800: #661320;
+  --color-burgundy-700: #7E1828;
+  --color-gold-600: #9E823E;
+  --color-gold-500: #BFA15F;
+}
+
+/* Document rule & paper styling */
+.paper-sheet {
+  background-color: #F7F4EC;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px -4px rgba(0, 0, 0, 0.12);
+}
+
+.legal-stamp {
+  border: 1px solid #7E1828;
+  color: #7E1828;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.legal-gold-stamp {
+  border: 1px solid #9E823E;
+  color: #9E823E;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Subtle docket line pattern */
+.legal-ruled-bg {
+  background-image: linear-gradient(to bottom, transparent 96%, rgba(66, 63, 57, 0.08) 96%);
+  background-size: 100% 2.25rem;
+}
+
+/* Custom scrollbar for authentic document feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181716;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #423F39;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #661320;
+}
+
